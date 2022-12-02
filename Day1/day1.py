@@ -14,4 +14,14 @@ if __name__ == '__main__':
 
     arr = list(map(split_line, lines))
     res = list(map(sum, arr))
-    print(res, '\n', max(res))
+
+    print(max(res))
+
+    top_3 = [res[0], res[1], res[2]]
+
+    for n in res:
+        if n > min(top_3):
+            top_3.remove(min(top_3))
+            top_3.append(n)
+
+    print(sum(top_3))
