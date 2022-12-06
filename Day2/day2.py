@@ -2,7 +2,7 @@ def split_to_pairs(s):
     return s.split(' ')
 
 if __name__ == '__main__':
-    fn = 'day2_input.txt'
+    fn = 'day3_input.txt'
     with open(fn) as f:
         lines = f.read()
     lines = lines.split('\n')
